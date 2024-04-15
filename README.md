@@ -19,9 +19,10 @@ The optimization task involves finding a string `s` in `S` that minimizes `L(s)`
 ## Methodology
 
 The repository explores different algorithms for non-convex non-linear optimization in natural language settings. These methods typically involve:
-- Sampling to estimate local approximations of convex problems.
+- Sampling to estimate local approximations of convex problems .
 - Solving these approximations to find local minima.
-- Iteratively refining the solutions to approach global optimality.
+- Using stochastic elements (such as the temperature parameter) to prevent premature convergence local minima near the startin point.
+- Iteratively repeating the process around the new local minimum.
 
 The techniques implemented in this repository are designed to handle the challenges associated with the high-dimensional and discrete nature of text data.
 
