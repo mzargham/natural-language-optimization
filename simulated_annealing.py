@@ -1,4 +1,4 @@
-import scaffold
+from scaffold import *
 
 def simulated_annealing(initial_seed, initial_temperature, cooling_rate, iterations):
     current_temp = initial_temperature
